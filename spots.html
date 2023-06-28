@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Maimuna U. Section 86 (Pd 7/8 Odd)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'> <!--I got this from W3Schools-->
+    <title>Personal Website</title>
+    <style>
+        .hor-navbar ul{
+            list-style-type:none;
+            overflow:hidden;
+            background-color: rgb(48, 219, 162);
+            font-weight:bold;
+        }
+        .hor-navbar ul li{
+            float:left;
+        }
+        .hor-navbar ul li a{
+            display: block;
+            color:black;
+            padding:10px;
+            text-decoration:none;
+        }
+        h1{
+            text-align:center;
+        }
+        img{
+            height:250px;
+            width:400px;
+        }
+        body{
+            font-family:"Bitter";
+        }
+    </style>
+</head>
+<body>
+    <div class="hor-navbar">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="spots.html">Spots</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>NYC Spots!</h1>
+        <h3>Prospect Park</h3>
+        <p>During the summer I went to Prospect Park 
+            often for volunteer events and I came to 
+            realize how beautiful and calming the park is.</p>
+        <p>One area in particular that is the most beautiful is 
+            near The Boathouse. Nearby is a short bridge that 
+            goes over a waterfall. </p>
+        <br>
+        <img src="images/Waterfall.jpeg">
+        <a href="https://youtu.be/gdENVqNv6EA">Click here to watch the waterfall</a>
+         <!--Youtube doesn't allow free downloads and I couldn't get the iframe tag to work-->
+        <p>I don't really go out enough to have a place I don't 
+            really like. But I guess that can show that everywhere 
+            but Prospect Park and home and not that great.</p>
+        <p>This was me. Thank you for viewing my website. 
+            Please enter your name so I can see whos pages I should visit.</p>
+    </div>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <footer>
+        <p>&copy; 2022 Maimuna Ullah</p>
+    </footer>
+</body>
+</html>
