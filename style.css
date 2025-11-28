@@ -1,0 +1,72 @@
+:root {
+    --pakistan-green: #003314;
+    --green: #104911;
+    --bottle-green: #006a4e;
+    --dark-green: #01200f;
+    --sea-green: #5b8c5a;
+    --nyanza: #daf7dc;
+    --jasmine: #eecf6d;
+    --mikado-yellow: #fdc500;
+    --mustard: #ffd449;
+    --white: #ffffff;
+    --gray: #656565;
+    --black: #000000;
+}
+
+body {
+    font-family: "Indie Flower";
+    color: var(--sea-green);
+    background: var(--dark-green);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background: var(--jasmine);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    overflow: hidden;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--bottle-green);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar a:hover {
+    background: var(--mikado-yellow);
+}
+
+.navbar img {
+    width: 200px;
+    height: 50px;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+footer {
+    background: var(--bottle-green);
+    color: var(--dark-green);
+}
