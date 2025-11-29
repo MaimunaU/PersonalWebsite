@@ -28,7 +28,7 @@ body {
     position: fixed; /* moving nav bar */
     top: 0;          /* moving nav bar */
     width: 100%;     /* moving nav bar */
-    z-index: 1000;   /* moving nav bar */
+    z-index: 2000;   /* moving nav bar */
     display: flex;
     background: var(--jasmine);
 }
