@@ -21,9 +21,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 50px;
 }
 
 .navbar {
+    position: fixed; /* moving nav bar */
+    top: 0;          /* moving nav bar */
+    width: 100%;     /* moving nav bar */
+    z-index: 1000;   /* moving nav bar */
     display: flex;
     background: var(--jasmine);
 }
@@ -47,8 +52,7 @@ body {
     display: block;
     font-size: 20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .navbar a:hover {
@@ -84,9 +88,6 @@ footer {
     font-size: 20px;
 }
 
-.contact {
-    display: flex;
-}
 
 .contact ul {
     display: flex;
@@ -94,7 +95,6 @@ footer {
     list-style: none; 
     overflow: hidden;
     text-align: center;
-    flex-grow: 2;
 }
 
 .contact li {
@@ -107,8 +107,7 @@ footer {
     display: block;
     font-size: 20px;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .contact a:hover {
