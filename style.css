@@ -18,6 +18,9 @@ body {
     color: var(--sea-green);
     background: var(--dark-green);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -66,7 +69,48 @@ ul {
     list-style-type: circle;
 }
 
+main {
+    flex-grow: 1;
+}
+
+h2 {
+    text-align: center;
+}
+
 footer {
     background: var(--bottle-green);
     color: var(--dark-green);
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    overflow: hidden;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.contact li {
+    display: inline-block;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--dark-green);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact a:hover {
+    background: var(--sea-green);
 }
