@@ -21,14 +21,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 50px;
 }
 
 .navbar {
-    position: fixed; /* moving nav bar */
-    top: 0;          /* moving nav bar */
-    width: 100%;     /* moving nav bar */
-    z-index: 2000;   /* moving nav bar */
     display: flex;
     background: var(--jasmine);
 }
@@ -87,7 +82,6 @@ footer {
     padding: 0px 10px 0px 10px;
     font-size: 20px;
 }
-
 
 .contact ul {
     display: flex;
