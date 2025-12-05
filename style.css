@@ -101,6 +101,48 @@ main {
     border: 10px groove var(--jasmine);
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h3 {
+    text-align: center;
+}
+
+.extras {
+    border: 10px groove var(--jasmine);
+}
+
+.snakes {
+    border: 10px groove var(--jasmine);
+}
+
+.fruits {
+    border: 10px groove var(--jasmine);
+}
+
+.drinks {
+    border: 10px groove var(--jasmine);
+}
+
+.ice-cream {
+    border: 10px groove var(--jasmine);
+}
+
+.media {
+    border: 10px groove var(--jasmine);
+}
+
+.music {
+    border: 10px groove var(--jasmine);
+}
+
+.hobbies {
+    border: 10px groove var(--jasmine);
+}
+
 footer {
     background: var(--bottle-green);
     color: var(--dark-green);
