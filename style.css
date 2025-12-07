@@ -113,17 +113,14 @@ main {
 .about-container-top {
     display: flex;
     justify-content: space-evenly;
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 3%;
 }
 
 .about-container-bottom {
     display: flex;
     flex-direction: column;
-    font-size: 17px;
-    border: 5px outset var(--sea-green);
-    width: 80%;
-    margin: 0 auto;
+    font-size: 19px;
 }
 
 .about-container-bottom p {
@@ -158,7 +155,7 @@ h3 {
     justify-content: space-between;
 }
 
-.other, .snakes, .hobbies, .fruits, .drinks, .ice-cream, .movies, .shows, .artists, .albums, .songs {
+.other, .snakes, .hobbies, .fruits, .drinks, .ice-cream, .movies, .shows, .artists, .songs1, .songs2 {
     padding-right: 10px;
     margin: 10px;
     border: 5px outset var(--sea-green);
