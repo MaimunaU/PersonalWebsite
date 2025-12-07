@@ -14,12 +14,19 @@
 }
 
 body {
-    font-family: "Indie Flower";
     background: var(--dark-green);
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+header, footer {
+    font-family: "Caveat";
+}
+
+main {
+    font-family: "Indie Flower";
 }
 
 .navbar {
@@ -62,7 +69,7 @@ body {
 
 h1 {
     text-align: center;
-    
+    color: var(--jasmine);
 }
 
 ul {
@@ -79,11 +86,9 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0px 10px 0px;
-    
 }
 
 .home-content {
-    
     width: 70%;
     font-size: 31px;
     text-align: center;
@@ -91,63 +96,84 @@ main {
 }
 
 .profile-pic {
-    
     width: 30%;
     text-align: center;
+    align-content: center;
 }
 
 .profile-pic img {
-    width: 55%;
+    width: 60%;
     border: 10px groove var(--jasmine);
 }
 
-.about-container {
+.about-me {
+    font-size: 27px;
+}
+
+.about-container-top {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+
+.about-container-bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    border: 5px outset var(--sea-green);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-container-bottom p {
+    text-align: center;
+}
+
+/* To style the default bullet */
+main ul { 
+    list-style-type: none;
+}
+
+main ul li::before {
+  content: "\f005"; /* Font Awesome star icon */
+  font-family: "FontAwesome";
+  color: var(--jasmine);
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+main ol li::marker {
+    color: var(--jasmine); 
 }
 
 h3 {
     text-align: center;
+    color: var(--jasmine);
 }
 
-.extras {
-    border: 10px groove var(--jasmine);
+.starters, .food, .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.snakes {
-    border: 10px groove var(--jasmine);
-}
-
-.fruits {
-    border: 10px groove var(--jasmine);
-}
-
-.drinks {
-    border: 10px groove var(--jasmine);
-}
-
-.ice-cream {
-    border: 10px groove var(--jasmine);
-}
-
-.media {
-    border: 10px groove var(--jasmine);
+.other, .snakes, .hobbies, .fruits, .drinks, .ice-cream, .movies, .shows, .artists, .albums, .songs {
+    padding-right: 10px;
+    margin: 10px;
+    border: 5px outset var(--sea-green);
 }
 
 .music {
-    border: 10px groove var(--jasmine);
-}
-
-.hobbies {
-    border: 10px groove var(--jasmine);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer {
     background: var(--bottle-green);
     color: var(--dark-green);
     padding: 0px 50px 0px 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer h2 {
