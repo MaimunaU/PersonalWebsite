@@ -25,10 +25,7 @@ header, footer {
     font-family: "Caveat";
 }
 
-main {
-    font-family: "Indie Flower";
-}
-
+/* Nav bar start*/
 .navbar {
     display: flex;
     background: var(--jasmine);
@@ -66,22 +63,39 @@ main {
     height: 50px;
     flex-grow: 1;
 }
+/* Nav bar end*/
 
-h1 {
-    text-align: center;
-    color: var(--jasmine);
+/* To style the default bullet */
+main ul { 
+    list-style-type: none;
 }
 
-ul {
-    list-style-type: circle;
+main ul li::before {
+  content: "\f005"; /* Font Awesome star icon */
+  font-family: "FontAwesome";
+  color: var(--jasmine);
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+main ol li::marker {
+    color: var(--jasmine); 
+}
+/* default bullet style end*/
+
+h1, h3 {
+    text-align: center;
+    color: var(--jasmine);
 }
 
 main {
     flex-grow: 1;
     margin: 10px;
     color: var(--sea-green);
+    font-family: "Indie Flower";
 }
 
+/* Home page start*/
 .home-container {
     display: flex;
     justify-content: space-evenly;
@@ -105,7 +119,9 @@ main {
     width: 60%;
     border: 10px groove var(--jasmine);
 }
+/* Home page end*/
 
+/* About me page start*/
 .about-me {
     font-size: 27px;
 }
@@ -127,28 +143,6 @@ main {
     text-align: center;
 }
 
-/* To style the default bullet */
-main ul { 
-    list-style-type: none;
-}
-
-main ul li::before {
-  content: "\f005"; /* Font Awesome star icon */
-  font-family: "FontAwesome";
-  color: var(--jasmine);
-  font-size: 13px;
-  padding-right: 5px;
-}
-
-main ol li::marker {
-    color: var(--jasmine); 
-}
-
-h3 {
-    text-align: center;
-    color: var(--jasmine);
-}
-
 .starters, .food, .media {
     display: flex;
     flex-direction: column;
@@ -165,7 +159,70 @@ h3 {
     display: flex;
     justify-content: space-evenly;
 }
+/* About me page end*/
 
+/* Projects page start*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lights-out {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border: 10px groove var(--jasmine);
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.lights-out img {
+    width: 50%;
+    height: auto;
+    object-fit: contain; 
+}
+
+.final-proj-web {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 10px groove var(--jasmine);
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+}
+
+.final-imgs {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.stacked-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.final-imgs img {
+    width: 50%;
+}
+
+.stacked-imgs img {
+    width: 100%;
+    margin: 10px;
+}
+
+.final-proj-web a {
+    text-decoration: underline;
+    color: var(--sea-green);
+    font-size: 20px;
+}
+/* Projects page end*/
+
+/* Footer start*/
 footer {
     background: var(--bottle-green);
     color: var(--dark-green);
@@ -201,3 +258,4 @@ footer h2 {
 .contact a:hover {
     background: var(--sea-green);
 }
+/* Footer end*/
