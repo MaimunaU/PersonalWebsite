@@ -14,7 +14,6 @@
     <title>Personal Website</title>
 </head>
 <body>
-    <script src="main.js"></script>
     <header>
         <!-- Start of navigation -->
         <div class="navbar">
@@ -32,6 +31,63 @@
 
     <main>
         <div class="projects">
+            <button id="pdm" class="pdm-container" onclick="modalFunc('pdm-modal', 'pdm');"><img class="pdm-img" src="images/Snake.jpg"></button>
+            <div id="pdm-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <ul>
+                        <li>I worked in a team of four to create a music database and 
+                            access it for a fake listening application.</li>
+                        <li>This was a three-phase project, roughly split by these 3 focuses</li>
+                            <ul>
+                                <li>relational database schema setup and implementation in DataGrip</li>
+                                <li>application creation with database integration</li>
+                                <li>simple data analysis using PostgreSQL query results</li>
+                            </ul>
+                        <li>I applied knowledge of relational databases to design and implement a 
+                            database schema.</li>
+                        <li>I wrote PostgreSQL queries for data analysis.</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="lights-out" class="lights-container" onclick="modalFunc('lights-modal', 'lights-out');"><img class="lights-out-img" src="images/lights-out.png"></button>
+            <div id="lights-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <ul>
+                        <li>I worked on the GUI for the Lights Out puzzle game.</li>
+                        <li>The display is made up of 3 main sections.</li>
+                        <ul>
+                            <li>A message bar at the top that displays the number 
+                                of moves made and general messages or hints</li>
+                            <li>A 5x5 grid of buttons</li>
+                            <li>3 buttons below the grid to start a random game 
+                                (New Game), load in your own board (Load Board), 
+                                or get a hint (Hint)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <button id="final-web" class="final-web-container" onclick="modalFunc('final-web-modal', 'final-web');"><img class="final-web-img" src="images/final-proj-home.png"></button>
+            <div id="final-web-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <ul>
+                        <li>I collaborated with a partner to create a multi-page website.</li>
+                        <li>Designed and implemented three pages (“Home”, “Snakes”, and “Turtles”) with features like</li>
+                        <ul>
+                            <li>a navbar</li>
+                            <li>grid display</li>
+                            <li>tables</li>
+                            <li>responsive to differnt screen sizes</li>
+                        </ul>
+                        <li><a href="https://maimunau.github.io/FinalProject/" target="_blank">https://maimunau.github.io/FinalProject/</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- hold on -->  
+    <!--  <div class="projects">
             <div class="lights-out">
                 <img src="images/lights-out.png">
                 <ul>
@@ -67,7 +123,7 @@
                     <li><a href="https://maimunau.github.io/FinalProject/" target="_blank">https://maimunau.github.io/FinalProject/</a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->  
     </main>
 
     <footer>
@@ -80,5 +136,6 @@
         </div>
         <p>&copy; 2025 Maimuna Ullah</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
