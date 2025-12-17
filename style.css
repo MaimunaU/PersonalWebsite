@@ -166,7 +166,9 @@ main {
 /* Button and modal style start */
 button {
     background-color: var(--jasmine);
-    padding: 5px;
+    padding: 5px 13px;
+    font: bolder 25px "Caveat";
+    color: var(--dark-green);
 }
 
 .modal {
