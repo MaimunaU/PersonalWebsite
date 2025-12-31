@@ -161,6 +161,10 @@ main {
     display: flex;
     justify-content: space-evenly;
 }
+
+.playlist {
+    color: var(--jasmine);
+}
 /* About me page end */
 
 /* Button and modal style start */
