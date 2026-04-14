@@ -1,20 +1,26 @@
-function modalFunc(modalId, btnId) {
-    var modal = document.getElementById(modalId);
-    var btn = document.getElementById(btnId);
+document.addEventListener('DOMContentLoaded', () => {
 
-    btn.onclick = function() {
-    modal.style.display = "block";
-    }
-
-    document.querySelectorAll('.close').forEach(span => {
-        span.addEventListener('click', () => {
-            span.closest('.modal').style.display = 'none';
-        });
+    const modals = document.querySelectorAll('.modal');
+  
+    document.querySelectorAll('.proj-button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modalId = btn.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = "block";
+      });
     });
-
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
-}
+  
+    document.querySelectorAll('.close').forEach(span => {
+      span.addEventListener('click', () => {
+        span.closest('.modal').style.display = 'none';
+      });
+    });
+  
+    window.addEventListener('click', (event) => {
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  
+});

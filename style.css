@@ -4,6 +4,7 @@
     --bottle-green: #006a4e;
     --dark-green: #01200f;
     --sea-green: #5b8c5a;
+    --sea-bottle: #467750;
     --nyanza: #daf7dc;
     --jasmine: #eecf6d;
     --mikado-yellow: #fdc500;
@@ -89,8 +90,9 @@ h1, h3 {
 }
 
 .about-me, .project-info{
-    font-size: 27px;
+    font-size: 24px;
     text-align: center;
+    color: var(--sea-green)
 }
 
 main {
@@ -150,7 +152,7 @@ main {
     justify-content: space-between;
 }
 
-.other, .snakes, .hobbies, .fruits, .drinks, .ice-cream, .movies, .shows, .artists, .songs1, .songs2 {
+.basics, .snakes, .hobbies, .fruits, .drinks, .ice-cream, .movies, .shows, .artists, .songs1, .songs2 {
     padding-right: 10px;
     margin: 10px;
     border: 5px solid var(--sea-green);
@@ -190,7 +192,7 @@ button {
 }
 
 .modal-content {
-    background-color: var(--dark-green);
+    background-color: var(--dark-green); 
     margin: auto;
     padding: 20px;
     border: 3px solid var(--sea-green);
@@ -214,22 +216,25 @@ button {
 /* Button and modal style end */
 
 /* Projects page start */
-.projects {
-    display: flex;
-    display: wrap;
-    justify-content: space-evenly;
+.in-progress, .complete {
+    font-size: 29px;
+    text-align: left;
+    color: var(--sea-bottle);
+    margin: 10px;
+}
+.progress-projs, .complete-projs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.pdm-container, .lights-container, .final-web-container {
-    width: 50%;
+.proj-button {
     margin: 10px;
 }
 
-.pdm-img, .lights-out-img, .final-web-img{
+.img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    object-position: center;
 }
 
 .modal-content a {

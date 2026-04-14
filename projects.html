@@ -32,68 +32,92 @@
     <main>
         <h1>Projects</h1>
         <p class="project-info">These are some programming projects I've worked on!<br>Click on a project to learn more about it and my involvement.</p>
-        <p>More projects to be added soon!</p>
-        <div class="projects">
-            <!-- <button id="pdm" class="pdm-container" onclick="modalFunc('pdm-modal', 'pdm');">Music Domain Database Application<img class="pdm-img" src="images/Snake.jpg"></button>
-            <div id="pdm-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <ul>
-                        <li>Java, PostgreSQL, DataGrip, GitHub, Git, VS Code</li>
-                        <li>Semester long project for Principles of Data Management</li>
-                        <li>I worked in a team of four to create a music database and 
-                            access it for a fake listening application.</li>
-                        <li>This was a three-phase project, roughly split by these 3 focuses</li>
-                            <ul>
-                                <li>relational database schema setup and implementation in DataGrip</li>
-                                <li>application creation with database integration</li>
-                                <li>simple data analysis using PostgreSQL query results</li>
-                            </ul>
-                        <li>I applied knowledge of relational databases to design and implement a 
-                            database schema.</li>
-                        <li>I wrote PostgreSQL queries for data analysis.</li>
-                    </ul>
-                </div>
-            </div> -->
-            <button id="lights-out" class="lights-container" onclick="modalFunc('lights-modal', 'lights-out');">Lights Out Puzzle GUI<img class="lights-out-img" src="images/lights-out.png"></button>
-            <div id="lights-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <ul>
-                        <li>JavaFx, GitHub, Git, IntelliJ</li>
-                        <li>Assignment for Computer Science for AP Students</li>
-                        <li>I worked on the GUI for the Lights Out puzzle game.</li>
-                        <li>The display is made up of 3 main sections.</li>
+        <p class="in-progress">In Progress</p>
+        <div class="progress-projs">
+            <div class="proj-container">
+                <button id="todo" class="proj-button" data-modal="todo-modal">To-do App<img class="img" src="images/todo-main.png"></button>
+                <div id="todo-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
                         <ul>
-                            <li>A message bar at the top that displays the number 
-                                of moves made and general messages or hints</li>
-                            <li>A 5x5 grid of buttons</li>
-                            <li>3 buttons below the grid to start a random game 
-                                (New Game), load in your own board (Load Board), 
-                                or get a hint (Hint)</li>
+                            <li>React (JSX), Tailwind CSS, GitHub, Git, VS Code</li>                            
+                            <li>Full-stack MERN application for practice and personal use</li>
+                            <li>Implemented CRUD functionality (Create, Read, Update, Delete) via RESTful APIs</li>
+                            <li>Frontend built using React (JSX) and Tailwind CSS for responsive design</li>
+                            <li>Backend uses Node.js and connects to MongoDB Atlas.</li>
                         </ul>
-                    </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <p class="complete">Complete</p>
+        <div class="complete-projs">
+            <div class="proj-container">
+                <button id="pdm" class="proj-button" data-modal="pdm-modal">Music Domain Database Application<img class="img" src="images/main-menu.png"></button>
+                <div id="pdm-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <ul>
+                            <li>Java, PostgreSQL, DataGrip, GitHub, Git, VS Code</li>
+                            <li>Semester long project for Principles of Data Management</li>
+                            <li>I worked in a team of four to create a music database and 
+                                access it for a fake listening application.</li>
+                            <li>This was a three-phase project, roughly split by these 3 focuses</li>
+                                <ul>
+                                    <li>relational database schema setup and implementation in DataGrip</li>
+                                    <li>application creation with database integration</li>
+                                    <li>simple data analysis using PostgreSQL query results</li>
+                                </ul>
+                            <li>I applied knowledge of relational databases to design and implement a 
+                                database schema.</li>
+                            <li>I wrote PostgreSQL queries for data analysis.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <button id="final-web" class="final-web-container" onclick="modalFunc('final-web-modal', 'final-web');">Web Development Final Project<img class="final-web-img" src="images/final-proj-home.png"></button>
-            <div id="final-web-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <ul>
-                        <li>HTML, CSS, GitHub, Git, VS Code</li>
-                        <li>Final project for my Web Development class in high school</li>
-                        <li>I collaborated with a partner to create a multi-page website.</li>
-                        <li>Designed and implemented three pages (“Home”, “Snakes”, and “Turtles”) with features like</li>
+            <div class="proj-container">
+                <button id="lights-out" class="proj-button" data-modal="lights-modal">Lights Out Puzzle GUI<img class="img" src="images/lights-out.png"></button>
+                <div id="lights-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
                         <ul>
-                            <li>a navbar</li>
-                            <li>grid display</li>
-                            <li>tables</li>
-                            <li>responsive to differnt screen sizes</li>
+                            <li>JavaFx, GitHub, Git, IntelliJ</li>
+                            <li>Assignment for Computer Science for AP Students</li>
+                            <li>I worked on the GUI for the Lights Out puzzle game.</li>
+                            <li>The display is made up of 3 main sections.</li>
+                            <ul>
+                                <li>A message bar at the top that displays the number 
+                                    of moves made and general messages or hints</li>
+                                <li>A 5x5 grid of buttons</li>
+                                <li>3 buttons below the grid to start a random game 
+                                    (New Game), load in your own board (Load Board), 
+                                    or get a hint (Hint)</li>
+                            </ul>
                         </ul>
-                        <li><a href="https://maimunau.github.io/FinalProject/" target="_blank">https://maimunau.github.io/FinalProject/</a></li>
-                    </ul>
-                    <!-- <img src="images/final-proj-top.png">
-                    <img src="images/final-proj-bottom.png"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="proj-container">
+                <button id="final-web" class="proj-button" data-modal="final-web-modal">Web Development Final Project<img class="img" src="images/final-proj-home.png"></button>
+                <div id="final-web-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <ul>
+                            <li>HTML, CSS, GitHub, Git, VS Code</li>
+                            <li>Final project for my Web Development class in high school</li>
+                            <li>I collaborated with a partner to create a multi-page website.</li>
+                            <li>Designed and implemented three pages (“Home”, “Snakes”, and “Turtles”) with features like</li>
+                            <ul>
+                                <li>a navbar</li>
+                                <li>grid display</li>
+                                <li>tables</li>
+                                <li>responsive to differnt screen sizes</li>
+                            </ul>
+                            <li><a href="https://maimunau.github.io/FinalProject/" target="_blank">https://maimunau.github.io/FinalProject/</a></li>
+                        </ul>
+                        <!-- <img src="images/final-proj-top.png">
+                        <img src="images/final-proj-bottom.png"> -->
+                    </div>
                 </div>
             </div>
         </div>
