@@ -89,7 +89,7 @@ h1, h3 {
     color: var(--jasmine);
 }
 
-.about-me, .project-info{
+.info{
     font-size: 24px;
     text-align: center;
     color: var(--sea-green)
@@ -277,6 +277,29 @@ button {
     font-size: 20px;
 }
 /* Projects page end */
+
+/* Interests page start */
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.post-y {
+    background-color: var(--mustard);
+    border-radius: 30px;
+    height: 400px;
+    width: 85%;
+    margin: 10px;
+}
+.post-g {
+    background-color: var(--sea-green);
+    border-radius: 30px;
+    height: 400px;
+    width: 85%;
+    margin: 10px;
+}
+/* Interests page end */
 
 /* Footer start */
 footer {
