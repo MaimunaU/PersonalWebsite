@@ -203,7 +203,7 @@ button {
 }
 
 .left-side {
-    width: 30%;
+    width: 40%;
     margin: 7px;
     display: flex;
     flex-direction: column;
@@ -212,12 +212,13 @@ button {
 }
 
 .right-side {
-    width: 70%;
+    width: 60%;
     margin: 7px;
 }
 
-.slide-imgs {
-    border: 5px groove var(--jasmine);
+.current-img {
+    max-height: 65vh;
+    object-fit: contain;
 }
 
 .slide {
@@ -227,12 +228,11 @@ button {
 }
 
 .prev, .next {
-    background: none;
-    outline: none;
-    box-shadow: none;
+    background: var(--bottle-green);
     border-radius: 50%;
     color: var(--jasmine);
     text-align: center;
+    margin: 5px;
 }
 
 .close {

@@ -24,3 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
 });
+
+document.querySelectorAll('.left-side').forEach(pic => {
+  const images = JSON.parse(pic.dataset.images);
+  let currentIndex = 0;
+
+  const imgElement = pic.querySelector('.current-img');
+  const nextBtn = pic.querySelector('.next');
+  const prevBtn = pic.querySelector('.prev');
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    imgElement.src = images[currentIndex];
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    imgElement.src = images[currentIndex];
+  });
+});
