@@ -285,19 +285,130 @@ button {
     justify-content: space-around;
     align-items: center;
 }
-.post-y {
-    background-color: var(--mustard);
-    border-radius: 30px;
-    height: 400px;
-    width: 85%;
-    margin: 10px;
-}
-.post-g {
+
+.post-s {
     background-color: var(--sea-green);
     border-radius: 30px;
     height: 400px;
     width: 85%;
     margin: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.post-b {
+    background-color: var(--bottle-green);
+    border-radius: 30px;
+    height: 400px;
+    width: 85%;
+    margin: 10px;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 3px black; */
+}
+
+.col div {
+    /* border: solid 3px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.star {
+    background-color: var(--mustard);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+        2% 35%, 39% 35%
+    );
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.circle {
+    background-color: var(--bottle-green);
+    clip-path: ellipse(50% 40% at 50% 50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center 10%;
+    transform: translateY(-20px);
+}
+
+.oval {
+    background-color: var(--bottle-green);
+    clip-path: ellipse(35% 50% at 50% 50%);
+    height: 350px;
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oval img {
+    width: 70%;
+    height: 85%;
+    object-position: center;
+}
+
+.blob {
+    background-color: var(--bottle-green);
+    clip-path: polygon(37% 89%, 29% 89%, 19% 85%, 10% 76%, 11% 66%, 17% 58%, 19% 50%, 
+                        15% 38%, 12% 24%, 23% 16%, 36% 14%, 42% 10%, 49% 13%, 55% 16%, 
+                        62% 11%, 71% 15%, 74% 24%, 74% 32%, 80% 35%, 90% 37%, 95% 44%, 
+                        89% 48%, 83% 49%, 81% 54%, 84% 57%, 90% 60%, 91% 67%, 88% 74%, 
+                        82% 80%, 71% 81%, 64% 80%, 56% 77%, 50% 81%, 45% 87%);
+    height: 450px;
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob p {
+    color: var(--nyanza);
+    max-width: 200px;
+    font-size: 18px;
+}
+
+.col p {
+    color: var(--nyanza);
+    max-width: 80%;
+    font-size: 18px;
 }
 /* Interests page end */
 
