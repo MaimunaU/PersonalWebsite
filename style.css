@@ -181,12 +181,9 @@ button {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    padding-top: 70px; /* Location of the box */
+    inset: 0;
+    overflow-y: auto; 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -209,11 +206,13 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
+    
 }
 
 .right-side {
     width: 60%;
     margin: 7px;
+    
 }
 
 .current-img {
