@@ -249,6 +249,12 @@ button {
 /* Button and modal style end */
 
 /* Projects page start */
+hr {
+    width: 85%;
+    margin: auto;
+    border-top: 3px solid var(--mustard);
+}
+
 .in-progress, .complete {
     font-size: 29px;
     text-align: left;
