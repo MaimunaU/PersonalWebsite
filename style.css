@@ -26,6 +26,12 @@ header, footer {
     font-family: "Caveat";
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 /* Nav bar start */
 .navbar {
     display: flex;
