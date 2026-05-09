@@ -6,6 +6,7 @@
     --sea-green: #5b8c5a;
     --sea-bottle: #467750;
     --nyanza: #daf7dc;
+    --cream: #eddca6;
     --jasmine: #eecf6d;
     --mikado-yellow: #fdc500;
     --mustard: #ffd449;
@@ -131,6 +132,28 @@ main {
 .profile-pic img {
     width: 60%;
     border: 10px groove var(--jasmine);
+}
+
+.song-recs span {
+    font-size: 21px;
+}
+
+.song-week {
+    color: var(--nyanza);
+    font-size: 21px;
+}
+
+.song-week p {
+    color: var(--sea-green);
+    font-size: 24px;
+    text-align: center;
+}
+
+.song-week ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 /* Home page end */
 
@@ -337,26 +360,44 @@ hr {
     width: 100%;
 }
 
+.col p {
+    color: var(--nyanza);
+    max-width: 80%;
+    font-size: 18px;
+}
+
 .star {
     background-color: var(--mustard);
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
-        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
-        2% 35%, 39% 35%
-    );
+    clip-path: polygon(50% 5%, 65% 35%, 95% 40%, 75% 65%, 80% 95%, 
+                        50% 80%, 20% 95%, 25% 65%, 5% 40%, 35% 35%);
     height: 400px;
     width: 400px;
     margin: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .star img {
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     object-position: center;
+    transform: translateY(20px);
+}
+
+.star-text {
+    color: var(--bottle-green);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.star-text span {
+    transform: translateY(25px);
 }
 
 .circle {
@@ -413,12 +454,6 @@ hr {
 .blob p {
     color: var(--nyanza);
     max-width: 200px;
-    font-size: 18px;
-}
-
-.col p {
-    color: var(--nyanza);
-    max-width: 80%;
     font-size: 18px;
 }
 /* Interests page end */
